@@ -30,8 +30,7 @@ twitter_username: dne
 github_username: dne
 
 # Build settings
-# theme: minima
-theme: jekyll-theme-dinky
+theme: minima
 plugins:
   - jekyll-feed
 
