@@ -1,0 +1,19 @@
+---
+layout: post
+title: Iron Front - Hooked
+description: Iron Front's first release on Creator-Destructor records.
+image: assets/img/if_hooked.jpg
+type: LP
+play:
+    - name: YouTube
+      url: https://music.youtube.com/playlist?list=OLAK5uy_mfanV3Gja7IqqtBLh9p5arVgq5MVG1W7U
+    - name: Spotify
+      url: https://open.spotify.com/album/2HvVuEXRGRVcHRg8n2j8U6?referral=labelaffiliate&utm_source=1101lAztm8YZ&utm_medium=Indie_Distrokid&utm_campaign=labelaffiliate
+buy:
+  - url: https://ironfront.bandcamp.com/album/hooked
+    name: BandCamp
+embed_player:
+  type: bandcamp
+  src: album=1008613586/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/
+---
+Recorded/mixed/mastered by <a href="https://www.instagram.com/morriscode/">Nicholas Morosini</a> at <a href="https://sites.google.com/view/nicholasmorosini">Inpatient Studios<a/>. Follow us at <a href="https://www.instagram.com/ironfront510/">@ironfront510</a>
