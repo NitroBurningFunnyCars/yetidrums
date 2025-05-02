@@ -1,0 +1,12 @@
+---
+layout: post
+title: East Bay Drum School Recital, 2025
+image: assets/img/recital_2025.png
+play:
+    - name: YouTube
+      url: https://youtu.be/rpGxhsdTOE0
+---
+My performance from the <a href="https://www.eastbaydrumschool.com/">East Bay Drum School's</a> 2025 recital. I had to pre-record mine this year because I had a gig with <a href="https://www.instagram.com/fourwindsaway/">@fourwindsaway</a> in Santa Cruz that day.
+
+This is a cover of <a href="https://www.youtube.com/watch?v=v-ObFw81sPc">Thomas Pridgen's perfomance</a> on the
+Zildjian LIVE! Youtube series.

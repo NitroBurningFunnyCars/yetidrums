@@ -8,10 +8,15 @@ menu_pages:
   category: discography
   tooltip: Discography tooltip
 
-- title: Collaborations
-  url: /collaborations/
-  category: collaborations
-  tooltip: Collaborations tooltip
+- title: Videos
+  url: /videos
+  category: videos
+  tooltip: Video tooltip
+
+- title: Gigs & Performances
+  url: /gigs/
+  category: gigs
+  tooltip: Gigs tooltip
 
 - title: About
   url: about.html
@@ -20,8 +25,14 @@ menu_pages:
 
 menu_contacts:
 - faicon: fas fa-envelope
-  url:
-  target: 
+  url: mailto:maxwell.mahmood+yeti@gmail.com
+  target: _blank
+- faicon: fab fa-youtube
+  url: http://www.youtube.com/@Yetidrumming
+  target: _blank
+- faicon: fab fa-instagram
+  url: https://www.instagram.com/__eternal.nightmare__/
+  target: _blank
 - faicon: fas fa-rss
   url: /feed.xml
   target: _blank

@@ -1,0 +1,11 @@
+---
+layout: default
+title: California Jazz Championships
+image: assets/img/ca_jazz_champs.png
+responsiveImage:
+  - src: assets/img/ca_jazz_champs.png
+    size: 668
+description: Berkeley High Jazz at the California Jazz Championships
+---
+I'll be playing in two BHS combos on Friday and the ensemble on Saturday.
+<a href="https://visitfolsom.com/event/california-jazz-championships/">Click here for more information here.</a>

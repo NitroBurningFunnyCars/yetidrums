@@ -1,0 +1,9 @@
+---
+layout: post
+title: East Bay Drum School Recital, 2024
+image: assets/img/recital_2024.png
+play:
+    - name: YouTube
+      url: https://youtu.be/jrF-vevjq6Q
+---
+My performance of Snarky Puppy's "What about me?" from the <a href="https://www.eastbaydrumschool.com/">East Bay Drum School's</a> 2024 recital.

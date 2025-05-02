@@ -1,0 +1,16 @@
+---
+layout: post
+title: Manos de Fierro - Promo 23
+description: Manos de Fierro single on Barbaric Brutality Records
+image: assets/img/manos_promo_23.jpg
+type: Single
+play:
+    - name: YouTube
+      url: https://music.youtube.com/playlist?list=OLAK5uy_l1VGMLy2eZFFzLvkBt8vvhKkXJXpGgNX0&si=v4-RPmrfr_yvG7Kk
+    - name: Spotify
+      url: https://open.spotify.com/album/4cRtgPwFqL2OH4tkVpbJnQ
+buy:
+  - url: https://creatordestructor.com/products/manos-de-fierro-eat-lead-promo-23-lp
+    name: CreatorDestructor
+---
+Recorded/mixed/mastered by <a href="https://www.instagram.com/morriscode/">Nicholas Morosini</a> at <a href="https://sites.google.com/view/nicholasmorosini">Inpatient Studios<a/>. Follow us at <a href="https://www.instagram.com/manosdefierro510/">@manosdefierro510</a>

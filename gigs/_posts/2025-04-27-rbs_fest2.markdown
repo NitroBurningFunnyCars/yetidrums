@@ -1,0 +1,11 @@
+---
+layout: default
+title: Fourwindsaway at RBS Fest day two
+image: assets/img/rbs_fest_flyer.png
+responsiveImage:
+  - src: assets/img/rbs_fest_flyer.png
+    size: 1286
+description: Four Winds Away in San Jose, CA
+---
+Four Winds Away will be playing the second day of RBS Fest in San Jose on the side stage at 1pm.
+<a href="https://www.rnrgpresents.com">Click here for more info.</a>

@@ -2,7 +2,7 @@
 layout: post
 title: Iron Front - Show of Force
 description: Iron Front's second release on Creator-Destructor records.
-image: assets/img/if_show_of_force.jpg
+image: assets/img/if_show_of_force2.png
 type: EP
 play:
     - name: YouTube

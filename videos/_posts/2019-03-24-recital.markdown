@@ -1,0 +1,9 @@
+---
+layout: post
+title: East Bay Drum School Recital, 2019
+image: assets/img/recital_2019.jpg
+play:
+    - name: YouTube
+      url: https://youtu.be/vf-bCspFTLo
+---
+My performance of Steely Dan's Aja from the <a href="https://www.eastbaydrumschool.com/">East Bay Drum School's</a> 2019 recital.
