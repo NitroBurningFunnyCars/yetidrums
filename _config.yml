@@ -11,7 +11,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate-v2
-  - jekyll_social_icons
 future: true
 markdown: kramdown
 remote_theme: ItsPatrq/minimal-music-project

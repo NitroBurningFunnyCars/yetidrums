@@ -61,7 +61,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    jekyll_social_icons (0.1.0)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
@@ -119,7 +118,6 @@ DEPENDENCIES
   jekyll-paginate-v2
   jekyll-seo-tag!
   jekyll-sitemap
-  jekyll_social_icons
   kramdown-parser-gfm
   kramdown-syntax-coderay
   minimal-music-project!
