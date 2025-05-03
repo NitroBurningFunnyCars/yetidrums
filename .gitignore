@@ -1,5 +1,8 @@
-_site
-.sass-cache
 .jekyll-cache
 .jekyll-metadata
+.sass-cache
+.template
+_site
+genPost
+runit
 vendor

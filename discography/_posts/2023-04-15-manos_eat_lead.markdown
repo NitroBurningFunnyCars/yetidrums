@@ -3,7 +3,7 @@ layout: post
 title: Manos de Fierro - Eat Lead
 description: Manos de Fierro's first release on Creator-Destructor Records
 image: assets/img/manos_eat_lead.jpg
-type: EP
+type: LP
 play:
     - name: YouTube
       url: https://music.youtube.com/playlist?list=OLAK5uy_m2cbxvahRD_tal-ckUTzWyKOSfMEYsOKk&si=XNz8V4kFHjuYs8vA
