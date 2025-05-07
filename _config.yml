@@ -17,6 +17,11 @@ remote_theme: ItsPatrq/minimal-music-project
 permalink: /:title.html
 socials:
   instagram: https://www.instagram.com/__eternal.nightmare__/
+# jekyll-feed
+author: Max Mahmood
+feed.icon: assets/img/favicon.ico
+title: yetidrums.com
+url: https://yetidrums.com
 
 pagination:
   enabled: true

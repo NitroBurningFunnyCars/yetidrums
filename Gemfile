@@ -2,6 +2,13 @@
 
 source "https://rubygems.org"
 gemspec
+# no longer in stdlib
+gem "ostruct"
+gem "base64"
+gem "bigdecimal"
+gem "csv"
+gem "logger"
+#
 gem "kramdown-parser-gfm"
 gem "kramdown-syntax-coderay"
 #seo
