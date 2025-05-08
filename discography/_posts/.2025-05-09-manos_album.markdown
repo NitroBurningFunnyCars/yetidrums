@@ -1,0 +1,20 @@
+---
+layout: post
+title: Manos de Fierro - Self-Titled
+description: Manos de Fierro's new album on Creator-Destructor Records
+image: assets/img/manos_self_titled.png
+type: LP
+play:
+    - name: YouTube
+      url: 
+    - name: Spotify
+      url: 
+buy:
+  - url: 
+    name: BandCamp
+embed_player:
+  type: bandcamp
+  src: # album=827198313/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/
+---
+Recorded/mixed/mastered by <a href="https://www.instagram.com/charlestoshio/">Charles Toshio</a> at
+<a href="https://www.thepandastudios.com/">The Panda Studios</a> and <a href="https://www.instagram.com/morriscode/">Nicholas Morosini</a> at <a href="https://sites.google.com/view/nicholasmorosini">Inpatient Studios<a/>.
