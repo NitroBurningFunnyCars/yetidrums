@@ -4,6 +4,6 @@ title: Berkeley High Jazz in Cuba
 image: assets/img/cuba_me.jpeg
 play:
     - name: YouTube
-      url: https://youtu.be/ZFLtveiJHiw
+      url: https://youtu.be/AYvXyWJYNL8
 ---
 The Cuban students from <a href="https://havanamusicschool.com/escuela-nacional-arte-centro-insignia-la-ensenanza-artistica-cuba-2/">La ENA</a> who we studied with for a week got to come to our hotel one night and play. We hadn't reheased either of these but the energy was good.
