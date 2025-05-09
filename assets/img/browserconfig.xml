@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/assets/img/favicon.ico"/>
+            <square150x150logo src="/assets/img/yeti_logo_150x150.png"/>
             <TileColor>#da532c</TileColor>
         </tile>
     </msapplication>
