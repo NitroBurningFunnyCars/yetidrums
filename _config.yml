@@ -1,4 +1,4 @@
-title: Max Mahmood
+_config.ymltitle: Max Mahmood
 tagline: Yetidrums
 email: yetidrumming+web@gmail.com
 description: >-
@@ -20,8 +20,8 @@ socials:
 # jekyll-feed
 author: Max Mahmood
 feed:
-  icon: /assets/img/favicon.ico
-  logo: /assets/img/favicon.ico
+  icon: /assets/img/feedicon.png
+  logo: /assets/img/yeti_logo.png
 title: yetidrums.com
 url: https://yetidrums.com
 
