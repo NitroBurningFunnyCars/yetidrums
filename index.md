@@ -7,3 +7,4 @@ pagination:
     title: ':title'
 image: assets/img/yeti_logo.png
 ---
+Latest Posts
