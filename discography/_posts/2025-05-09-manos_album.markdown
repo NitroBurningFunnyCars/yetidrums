@@ -10,8 +10,8 @@ play:
     - name: Spotify
       url: https://open.spotify.com/album/50GMUNWDvl8HS06JIejRuk
 buy:
-  - url: https://www.nightshiftmerch.com/collections/Manos-De-Fierro
-    name: Barbaric Brutality Records
+  - url: https://creatordestructor.com/collections/manos-de-fierro
+    name: Creator-Destructor Records
 embed_player:
   type: YouTube
   src: https://music.youtube.com/playlist?list=OLAK5uy_nLfM5GcPtnCUT0s5jS5Z7A0WnI4ap4g8c&si=gtRAjyCFnhKCYBGy
