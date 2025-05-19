@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Iron Front - Left Out to Rot
-description: Iron Front's first album. Not mentioning the label since they ripped us off.
+description: Iron Front's first album on Transylvanian Recordings.
 image: assets/img/if_left_out.jpg
 type: LP
 play:
