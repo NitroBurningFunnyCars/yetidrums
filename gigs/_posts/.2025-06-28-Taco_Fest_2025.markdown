@@ -1,0 +1,11 @@
+---
+layout: default
+title: Taco Fest 2025
+image: assets/img/tacofest_2025.png
+responsiveImage:
+  - src: assets/img/tacofest_2025.png
+    size: 1128
+description: 2nd annual Taco Festival in Richmond, CA
+---
+I'll be playing with three bands this year. Iron Front, Four Winds Away, and the first show of my new band
+Cuban Necktie. Yes, there will be tacos served.
