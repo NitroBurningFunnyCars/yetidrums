@@ -7,4 +7,4 @@ responsiveImage:
     size: 306
 description: Our final concert of the year. Held at the Little Theater at Berkeley High School, tickets at the door.
 ---
-I'll be performing with the ensemble this night and two combos on May 27th.
+I'll be performing with the ensemble this night and two combos on May 27th. Music at 7pm, tickets at the door.
