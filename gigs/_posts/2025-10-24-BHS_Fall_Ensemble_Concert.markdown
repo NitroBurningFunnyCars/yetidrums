@@ -1,6 +1,6 @@
 ---
 layout: default
-title: BHS Spring Ensemble Concert
+title: BHS Fall Ensemble Concert
 image: assets/img/bhs_jazz.png
 responsiveImage:
   - src: assets/img/bhs_jazz.png
