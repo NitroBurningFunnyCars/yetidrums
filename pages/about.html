@@ -26,99 +26,238 @@ figcaption {
   text-align: center;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+/* --- Responsive Flexbox Layout --- */
+/* Base: 3 columns on desktop */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space between columns */
 }
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+
+/* Each column is 1/3 width on desktop */
+.column {
+  padding: 5px;
+  box-sizing: border-box;
+  flex: 0 0 33.333%;
+}
+
+/* Medium screens: 2 columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 0 0 50%;
+  }
+}
+
+/* Small screens: 1 column */
+@media (max-width: 500px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+/* --- Lightbox CSS --- */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  cursor: pointer;
+
+  /* Fade animation */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+#lightbox.show {
+  opacity: 1;
+}
+
+/* Large image inside lightbox */
+#lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 0 20px black;
+}
+
+/* Caption in lightbox */
+#lightbox-caption {
+  margin-top: 0.5em;
+  color: white;
+  font-style: italic;
+  text-align: center;
 }
 </style>
 
-
+<p>
 Max Mahmood is a 17-year-old drummer with a solid foundation in both jazz and heavy
 music. He began formal lessons at age 5 and was performing with bands by 8. His
 playing blends technical precision with creative range, developed through years
 of touring with hardcore and death metal bands, as well as studying
 and performing jazz at a high level.
+</p>
 
+<p>
 He was the first freshman in 20 years to be accepted into the Berkeley High
 School Jazz Ensemble and currently plays in several groups around the Bay
 Area including the California Jazz Conservatory's Advanced High School Jazz Workshop and Studio Band.
 He's studied at Cuba's renowned Escuela Nacional de Arte and has received
 multiple honors at jazz festivals for solo and ensemble performance.
+</p>
 
+<p>
 Max's discography includes recent work with Manos de Fierro, Iron Front, and
 Four Winds Away, among others. He brings a rare mix of discipline, versatility,
 and live experience to every project he joins.
+</p>
 
+
+<!-- --- IMAGE GALLERY (Flexbox: 3→2→1) --- -->
 
 <div class="row">
   <div class="column">
     <figure>
-      <img src="assets/img/max_and_brian_blade-scaled.jpg" alt="Max and Brian Blade" width="300" height="278">
-      <figcaption>Workshop at CJC with Brian Blade</figcaption>
+      <img src="assets/img/max_and_brian_blade-scaled.jpg"
+           alt="Max and Brian Blade"
+           width="300"
+           height="278"
+           data-large="assets/img/max_and_brian_blade.jpg"
+           loading="lazy">
+      <figcaption>Workshop at CJC with Brian Blade 2025</figcaption>
     </figure>
   </div>
+
   <div class="column">
     <figure>
-      <img src="assets/img/taco_fest_max-1-scaled.jpg" alt="Taco Fest 2025" width="300" height="205">
+      <img src="assets/img/taco_fest_max-1-scaled.jpg"
+           alt="Taco Fest 2025"
+           width="300"
+           height="205"
+           data-large="assets/img/taco_fest_max-1.jpg"
+           loading="lazy">
       <figcaption>Taco Fest 2025 (@jooon696)</figcaption>
     </figure>
   </div>
+
   <div class="column">
     <figure>
-      <img src="assets/img/studio_blur-scaled.png" alt="Recording at Sharkbite Studios" width="300" height="205">
+      <img src="assets/img/studio_blur-scaled.png"
+           alt="Recording at Sharkbite Studios"
+           width="300"
+           height="205"
+           data-large="assets/img/studio_blur.png"
+           loading="lazy">
       <figcaption>Recording at Sharkbite Studios with Zack Ohren, 2024</figcaption>
     </figure>
   </div>
+
   <div class="column">
     <figure>
-      <img src="assets/img/max_panda_02082025.jpg" alt="Recording at The Panda Studios" width="300" height="205">
+      <img src="assets/img/max_panda_02082025.jpg"
+           alt="Recording at The Panda Studios"
+           width="300"
+           height="205"
+           data-large="assets/img/max_panda_02082025.jpg"
+           loading="lazy">
       <figcaption>Recording at The Panda Studios with Charles Toshio, 2025</figcaption>
     </figure>
   </div>
 </div>
+
 <div class="row">
   <div class="column">
     <figure>
-      <img src="assets/img/max_4wa_02072025-scaled.jpg" alt="4wa in Oakland" width="300" height="205">
-    <figcaption>Four Winds Away in LA, 2025</figcaption>
-    </figure>
-  </div>
-  <div class="column">
-    <figure>
-      <img src="assets/img/max_if_082424-2-scaled.jpg" alt="Iron Front in SF" width="300" height="205">
-    <figcaption>Iron Front in SF, 2024</figcaption>
-    </figure>
-  </div>
-  <div class="column">
-    <figure>
-      <img src="assets/img/max_snuffed_01012025-scaled.jpg" alt="snuffed in SF" width="300" height="205">
-    <figcaption>Subbing in Snuffed on Sight SF, 2025</figcaption>
+      <img src="assets/img/max_4wa_02072025-scaled.jpg"
+           alt="Four Winds Away"
+           width="300"
+           height="205"
+           data-large="assets/img/max_4wa_02072025.jpg"
+           loading="lazy">
+      <figcaption>Four Winds Away in LA, 2025</figcaption>
     </figure>
   </div>
 
+  <div class="column">
+    <figure>
+      <img src="assets/img/max_if_082424-2-scaled.jpg"
+           alt="Iron Front in SF"
+           width="300"
+           height="205"
+           data-large="assets/img/max_if_082424-2.jpg"
+           loading="lazy">
+      <figcaption>Iron Front in SF, 2024</figcaption>
+    </figure>
+  </div>
+
+  <div class="column">
+    <figure>
+      <img src="assets/img/max_snuffed_01012025-scaled.jpg"
+           alt="Snuffed on Sight"
+           width="300"
+           height="205"
+           data-large="assets/img/max_snuffed_01012025.jpg"
+           loading="lazy">
+      <figcaption>Subbing in Snuffed on Sight SF, 2025</figcaption>
+    </figure>
+  </div>
 </div>
 
-<style>
-    a {
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        transition: 0.4s;
-        -webkit-text-decoration-color: transparent;
-        -moz-text-decoration-color: transparent;
-        cursor: pointer;
-        color: #290099;
-    }
 
-    a:hover {
-        text-decoration-color: #290099;
-        transition: 0.4s;
-        -webkit-text-decoration-color: #290099;
-        -moz-text-decoration-color: #290099;
-    }
-</style>
+<!-- --- LIGHTBOX OVERLAY --- -->
+<div id="lightbox">
+  <div>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCap = document.getElementById("lightbox-caption");
+
+  // Collect all figure images
+  const images = Array.from(document.querySelectorAll("figure img"));
+  let currentIndex = -1;
+
+  images.forEach((img, idx) => {
+    img.addEventListener("click", () => {
+      currentIndex = idx;
+
+      // Load the large image
+      const largeSrc = img.dataset.large || img.src;
+      lightboxImg.src = largeSrc;
+
+      // Caption
+      const figcaption = img.closest("figure")?.querySelector("figcaption");
+      lightboxCap.textContent = figcaption ? figcaption.textContent : "";
+
+      // Show with fade-in
+      lightbox.style.display = "flex";
+      requestAnimationFrame(() => lightbox.classList.add("show"));
+
+      // Prevent background scroll
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // Close when clicking background
+  lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightbox) return; // avoid closing if image itself is clicked
+
+    lightbox.classList.remove("show");
+    setTimeout(() => {
+      lightbox.style.display = "none";
+      lightboxImg.src = "";
+      lightboxCap.textContent = "";
+      document.body.style.overflow = "";
+    }, 250);
+  });
+});
+</script>
