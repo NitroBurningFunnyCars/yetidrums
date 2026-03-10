@@ -8,18 +8,19 @@ category: home
         {% for post in paginator.posts %}
         {% if post.categories contains page.category %}
         <hr>
-        <article>
+        <article id="{{ post.slug }}">
             <header>
                 <p class="article-date">{{ post.date | date: "%Y-%m-%d" }}</p>
-                <h2>
-                    {% if post.external_url %}
-                    <a href="{{ post.external_url | relative_url }}" target="_blank">
-                        {% else %}
-                        <a href="{{ post.url | relative_url }}">
-                            {% endif %}
-                            {{ post.title }}
-                        </a>
-                </h2>
+                <h2 style="display:flex; align-items:center; gap:0.5em;">
+                  {% if post.external_url %}
+                    <a href="{{ post.external_url | relative_url }}" target="_blank">{{ post.title }}</a>
+                  {% else %}
+                    <a href="#{{ post.slug }}" class="post-anchor">{{ post.title }}</a>
+                    <button class="copy-link-btn" data-anchor="{{ post.slug }}" title="Copy link" aria-label="Copy link">
+                      🔗
+                    </button>
+                  {% endif %}
+</h2>
             </header>
             <section>
                 <figure>
@@ -50,14 +51,14 @@ category: home
         </article>
         {% else %}
         <hr>
-        <article>
+        <article id="{{ post.slug }}">
             <header>
                 <p class="article-date">{{ post.date | date: "%Y-%m-%d" }}</p>
                 <h2>
                     {% if post.external_url %}
                     <a href="{{ post.external_url | relative_url }}" target="_blank">
                         {% else %}
-                        <a href="{{ post.url | relative_url }}">
+                        <a href="#{{ post.slug }}">
                             {% endif %}
                             {{ post.title }}
                         </a>

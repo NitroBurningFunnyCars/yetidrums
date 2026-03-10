@@ -14,7 +14,7 @@ plugins:
 future: true
 markdown: kramdown
 remote_theme: ItsPatrq/minimal-music-project
-permalink: /:title.html
+permalink: /:slug/
 socials:
   instagram: https://www.instagram.com/__eternal.nightmare__/
 # jekyll-feed
