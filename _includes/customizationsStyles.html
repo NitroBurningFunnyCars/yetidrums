@@ -1,7 +1,20 @@
+{%- comment -%}
+  Load theme variables based on site.data.metaData.lightTheme
+  and then load custom CSS for pages and site-wide.
+{%- endcomment -%}
+
+{% if site.data.metaData.lightTheme %}
+  @import "./variables/light-theme";
+{% else %}
+  @import "./variables/black-theme";  {# dark theme #}
+{% endif %}
+
+{%- comment -%} Page-specific CSS {% endcomment -%}
 {% for css in page.custom-css %}
-    <link href="{{ css | relative_url }}" rel="stylesheet">
+  <link href="{{ css | relative_url }}" rel="stylesheet">
 {% endfor %}
 
+{%- comment -%} Site-wide custom CSS {% endcomment -%}
 {% for css in site.data.customs.custom-css %}
-    <link href="{{ css | relative_url }}" rel="stylesheet">
+  <link href="{{ css | relative_url }}" rel="stylesheet">
 {% endfor %}

@@ -1,10 +1,5 @@
 ---
 ---
-// {% if site.data.metaData.lightTheme %}
-// @import "./variables/light-theme";
-// {% else %}
-// @import "./variables/black-theme";
-// {% endif %}
 @import "minimal-music-project";
 
 /* Link overrides */
@@ -13,22 +8,129 @@ a {
   text-decoration: underline;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #2f324b;
   text-decoration: underline;
 }
 
+/* Scroll & anchor highlight */
 article {
   scroll-margin-top: 80px;
+  position: relative;   /* needed for hover shadows and links */
+  padding: 1em;         /* spacing inside card */
+  border-radius: 6px;
+  background-color: inherit; /* keep your current theme background */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: visible; /* allow links to display */
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(145deg, rgba(245,90,40,0.05), rgba(47,50,75,0.05));
+    z-index: -1;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+  }
 }
 
+article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+article:hover::before {
+  opacity: 1; /* slightly stronger glow on hover */
+}
+
+/* Inner shadow on hover */
+article:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Target highlight */
 article:target {
   animation: highlight 3s ease;
 }
 
 @keyframes highlight {
-  0%   { background: rgba(255,255,0,0.3); }
+  0%   { background: rgba(200, 200, 200, 0.2); } /* subtle light gray */
   100% { background: transparent; }
+}
+
+/* “More info” links */
+.read-more {
+  display: block;             /* ensures it gets its own line */
+  margin-top: 1em;            /* spacing from content */
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #f05a28;             /* accent color */
+  line-height: 1.4;           /* avoid clipping */
+}
+
+.read-more a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.read-more a:hover {
+  color: #ffa64d;
+  text-decoration: underline;
+}
+
+/* Floating card gallery images */
+.post-feed_image,
+figure img {
+  border-radius: 4px;
+  max-width: 100%;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.post-feed_image:hover,
+figure img:hover {
+  transform: scale(1.02);
+}
+
+/* Flexbox gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.column {
+  padding: 5px;
+  box-sizing: border-box;
+  flex: 0 0 33.333%;
+}
+
+@media (max-width: 800px) {
+  .column { flex: 0 0 50%; }
+}
+
+@media (max-width: 500px) {
+  .column { flex: 0 0 100%; }
+}
+
+/* Figure captions */
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  background-color: transparent;
+  color: #bbbbbb;
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: center;
+  padding: 2px 0;
 }
 
 html {
