@@ -2,7 +2,9 @@
 ---
 @import "minimal-music-project";
 
-/* Link overrides */
+/* ------------------------------
+   Link overrides
+--------------------------------*/
 a {
   color: #2f324b;
   text-decoration: underline;
@@ -14,17 +16,20 @@ a:focus {
   text-decoration: underline;
 }
 
-/* Scroll & anchor highlight */
+/* ------------------------------
+   Scroll & anchor highlight
+--------------------------------*/
 article {
   scroll-margin-top: 80px;
-  position: relative;   /* needed for hover shadows and links */
-  padding: 1em;         /* spacing inside card */
+  position: relative;
+  padding: 1em;
   border-radius: 6px;
-  background-color: inherit; /* keep your current theme background */
+  background-color: inherit;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: visible; /* allow links to display */
+  overflow: visible;
 
+  /* Gradient glow behind card */
   &:before {
     content: "";
     position: absolute;
@@ -43,10 +48,9 @@ article:hover {
 }
 
 article:hover::before {
-  opacity: 1; /* slightly stronger glow on hover */
+  opacity: 1;
 }
 
-/* Inner shadow on hover */
 article:hover::after {
   content: "";
   position: absolute;
@@ -62,18 +66,54 @@ article:target {
 }
 
 @keyframes highlight {
-  0%   { background: rgba(200, 200, 200, 0.2); } /* subtle light gray */
+  0%   { background: rgba(200, 200, 200, 0.2); }
   100% { background: transparent; }
 }
 
-/* “More info” links */
+/* ------------------------------
+   Body text & readability
+--------------------------------*/
+body,
+.post-content p,
+.post-feed p,
+figcaption,
+.article-date,
 .read-more {
-  display: block;             /* ensures it gets its own line */
-  margin-top: 1em;            /* spacing from content */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  body,
+  .post-content p,
+  .post-feed p,
+  figcaption,
+  .article-date,
+  .read-more {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body,
+  .post-content p,
+  .post-feed p,
+  figcaption,
+  .article-date,
+  .read-more {
+    font-size: 1.1rem;
+  }
+}
+
+/* ------------------------------
+   “More info” links
+--------------------------------*/
+.read-more {
+  display: block;
+  margin-top: 1em;
   font-weight: 500;
-  font-size: 0.9em;
-  color: #f05a28;             /* accent color */
-  line-height: 1.4;           /* avoid clipping */
+  color: #f05a28;
+  line-height: 1.4;
 }
 
 .read-more a {
@@ -86,7 +126,9 @@ article:target {
   text-decoration: underline;
 }
 
-/* Floating card gallery images */
+/* ------------------------------
+   Floating card gallery images
+--------------------------------*/
 .post-feed_image,
 figure img {
   border-radius: 4px;
@@ -100,7 +142,9 @@ figure img:hover {
   transform: scale(1.02);
 }
 
-/* Flexbox gallery */
+/* ------------------------------
+   Responsive Flexbox gallery
+--------------------------------*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -121,18 +165,66 @@ figure img:hover {
   .column { flex: 0 0 100%; }
 }
 
-/* Figure captions */
+/* ------------------------------
+   Figure captions
+--------------------------------*/
 figcaption {
   display: table-caption;
   caption-side: bottom;
   background-color: transparent;
   color: #bbbbbb;
-  font-size: 0.6em;
   font-style: italic;
   text-align: center;
   padding: 2px 0;
 }
 
+/* ------------------------------
+   Post date
+--------------------------------*/
+.article-date {
+  color: #888888;
+  font-size: 0.85em;
+  margin-bottom: 0.3em;
+}
+
+/* ------------------------------
+   Mobile-specific card tweaks
+--------------------------------*/
+@media (max-width: 500px) {
+  article {
+    padding: 1.5em;
+    margin-bottom: 1.2em;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    transform: none;
+  }
+
+  article:hover {
+    transform: none;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  }
+
+  .post-feed_image,
+  figure img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .read-more {
+    font-size: 1.15rem;
+  }
+
+  .article-date {
+    font-size: 0.95rem;
+  }
+
+  figcaption {
+    font-size: 0.7rem;
+  }
+}
+
+/* ------------------------------
+   Smooth scroll
+--------------------------------*/
 html {
   scroll-behavior: smooth;
 }
