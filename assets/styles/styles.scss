@@ -2,9 +2,7 @@
 ---
 @import "minimal-music-project";
 
-/* ------------------------------
-   Link overrides
---------------------------------*/
+/* Link overrides */
 a {
   color: #2f324b;
   text-decoration: underline;
@@ -16,9 +14,7 @@ a:focus {
   text-decoration: underline;
 }
 
-/* ------------------------------
-   Scroll & anchor highlight
---------------------------------*/
+/*  Scroll & anchor highlight */
 article {
   scroll-margin-top: 80px;
   position: relative;
@@ -29,7 +25,6 @@ article {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: visible;
 
-  /* Gradient glow behind card */
   &:before {
     content: "";
     position: absolute;
@@ -70,9 +65,7 @@ article:target {
   100% { background: transparent; }
 }
 
-/* ------------------------------
-   Body text & readability
---------------------------------*/
+/*   Body text & readability */
 body,
 .post-content p,
 .post-feed p,
@@ -94,20 +87,7 @@ figcaption,
   }
 }
 
-@media (max-width: 500px) {
-  body,
-  .post-content p,
-  .post-feed p,
-  figcaption,
-  .article-date,
-  .read-more {
-    font-size: 1.1rem;
-  }
-}
-
-/* ------------------------------
-   “More info” links
---------------------------------*/
+/*   “More info” links */
 .read-more {
   display: block;
   margin-top: 1em;
@@ -126,9 +106,7 @@ figcaption,
   text-decoration: underline;
 }
 
-/* ------------------------------
-   Floating card gallery images
---------------------------------*/
+/*   Floating card gallery images */
 .post-feed_image,
 figure img {
   border-radius: 4px;
@@ -142,9 +120,7 @@ figure img:hover {
   transform: scale(1.02);
 }
 
-/* ------------------------------
-   Responsive Flexbox gallery
---------------------------------*/
+/*   Responsive Flexbox gallery */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -165,9 +141,7 @@ figure img:hover {
   .column { flex: 0 0 100%; }
 }
 
-/* ------------------------------
-   Figure captions
---------------------------------*/
+/*   Figure captions */
 figcaption {
   display: table-caption;
   caption-side: bottom;
@@ -178,18 +152,14 @@ figcaption {
   padding: 2px 0;
 }
 
-/* ------------------------------
-   Post date
---------------------------------*/
+/*   Post date */
 .article-date {
   color: #888888;
   font-size: 0.85em;
   margin-bottom: 0.3em;
 }
 
-/* ------------------------------
-   Mobile-specific card tweaks
---------------------------------*/
+/*   Mobile-specific card & text */
 @media (max-width: 500px) {
   article {
     padding: 1.5em;
@@ -209,22 +179,30 @@ figcaption {
     height: auto;
   }
 
+  /* Increase body text for better readability */
+  body,
+  .post-content p,
+  .post-feed p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  /* “More info →” links bigger for tapping */
   .read-more {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
+  /* Post date */
   .article-date {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
+  /* Figure captions */
   figcaption {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 
-/* ------------------------------
-   Smooth scroll
---------------------------------*/
 html {
   scroll-behavior: smooth;
 }
