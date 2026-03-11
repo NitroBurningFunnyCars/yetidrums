@@ -2,7 +2,7 @@
 ---
 @import "minimal-music-project";
 
-/* Link overrides */
+/*   Link overrides */
 a {
   color: #2f324b;
   text-decoration: underline;
@@ -14,13 +14,13 @@ a:focus {
   text-decoration: underline;
 }
 
-/*  Scroll & anchor highlight */
+/*   Scroll & anchor highlight */
 article {
   scroll-margin-top: 80px;
   position: relative;
   padding: 1em;
   border-radius: 6px;
-  background-color: inherit;
+  background-color: #f9f9f9; /* subtle light gray background */
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: visible;
@@ -159,8 +159,10 @@ figcaption {
   margin-bottom: 0.3em;
 }
 
-/*   Mobile-specific card & text */
+/*   Mobile-specific tweaks */
 @media (max-width: 500px) {
+
+  /* Card spacing and shadows */
   article {
     padding: 1.5em;
     margin-bottom: 1.2em;
@@ -179,17 +181,12 @@ figcaption {
     height: auto;
   }
 
-  /* Increase body text for better readability */
+  /* Body text */
   body,
   .post-content p,
   .post-feed p {
     font-size: 1.2rem;
     line-height: 1.7;
-  }
-
-  /* “More info →” links bigger for tapping */
-  .read-more {
-    font-size: 1.25rem;
   }
 
   /* Post date */
@@ -200,6 +197,30 @@ figcaption {
   /* Figure captions */
   figcaption {
     font-size: 0.75rem;
+  }
+
+  /* “More info →” styled as tappable button */
+  .read-more {
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #f05a28;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+  }
+
+  .read-more a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .read-more:hover,
+  .read-more a:hover {
+    background-color: #ffa64d;
+    transform: translateY(-1px);
   }
 }
 
