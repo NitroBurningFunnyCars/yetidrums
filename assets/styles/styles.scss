@@ -240,29 +240,3 @@ figcaption {
 html {
   scroll-behavior: smooth;
 }
-
-/* ------------------------------
-   Force readable mobile text
---------------------------------*/
-@media (max-width: 500px) {
-
-  .post-feed p,
-  .post-content p,
-  article p {
-    font-size: 18px !important;
-    line-height: 1.75 !important;
-  }
-
-  .article-date {
-    font-size: 16px !important;
-  }
-
-  figcaption {
-    font-size: 14px !important;
-  }
-
-  .read-more {
-    font-size: 18px !important;
-  }
-}
-
