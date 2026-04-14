@@ -2,6 +2,19 @@
 ---
 @import "minimal-music-project";
 
+/* ------------------------------
+   Base font scaling
+--------------------------------*/
+html {
+  font-size: 16px; /* desktop baseline */
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 18px; /* bump everything up globally on mobile */
+  }
+}
+
 /*   Link overrides */
 a {
   color: #2f324b;
