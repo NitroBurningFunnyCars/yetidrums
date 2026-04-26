@@ -1,0 +1,11 @@
+---
+layout: default
+title: California Jazz Championships Drum Cam
+image: assets/img/
+responsiveImage:
+  - src: assets/img/ca_jazz_champs.jpg
+    size: 580
+description: CJC 2026 Drum Cam
+---
+Berkeley High School Jazz Ensemble performing Dafnis Prieto's "Two for One".
+YouTube: <a href="https://youtu.be/JP8CBOXS7sY">Two for One Drumcam</a>
