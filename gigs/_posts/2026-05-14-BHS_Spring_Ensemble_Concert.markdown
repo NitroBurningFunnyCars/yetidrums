@@ -8,4 +8,5 @@ responsiveImage:
 description: Our final concert of the year and my final concert with BHS.
 ---
 I'll be performing with the ensemble this night at the <a href="https://maps.app.goo.gl/trJvrtDYCGnR5R1t7">Freight and Salvage</a>
-in Berkeley. Music at 7pm, tickets available in advance <a href="https://bhsjazz.app.neoncrm.com/nx/portal/neonevents/events?path=%2Fportal%2Fevents%2F36254">here</a> or at the door, $20.
+in Berkeley. The first band starts at 7pm, we'll start at 8pm.  Tickets available in advance
+<a href="https://bhsjazz.app.neoncrm.com/nx/portal/neonevents/events?path=%2Fportal%2Fevents%2F36254">here</a> or at the door, $20.
