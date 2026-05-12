@@ -3,8 +3,8 @@ layout: default
 title: BHS Spring Ensemble Concert
 image: assets/img/bhs_jazz.png
 responsiveImage:
-  - src: assets/img/bhs_jazz.png
-    size: 306
+  - src: assets/img/bhs_spring_2026_max.png
+    size: 468
 description: Our final concert of the year and my final concert with BHS.
 ---
 I'll be performing with the ensemble this night at the <a href="https://maps.app.goo.gl/trJvrtDYCGnR5R1t7">Freight and Salvage</a>
