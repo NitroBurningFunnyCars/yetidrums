@@ -1,0 +1,13 @@
+---
+layout: default
+title: Violent Imagery Neck of the Woods Drum cam
+image: assets/img/
+responsiveImage:
+  - src: assets/img/violent_imagery_ep.png
+    size: 660
+description: Violent Imagery Drum cam 
+---
+Our first show
+YouTube: <a href="https://youtu.be/vTpXbQKfKBU?si=qoWvz6x9RpE2lRn2">Violent Imagery Drumcam</a>
+
+Check out the EP on <a href="https://violentimagery.bandcamp.com/album/violent-imagery">Bandcamp</a>.
