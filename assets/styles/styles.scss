@@ -540,3 +540,10 @@ article .article-date {
     font-size: 18px;
   }
 }
+
+/* Mobile — reduce vertical space between post cards */
+@media (max-width: 767px), (max-device-width: 767px) {
+  .post-feed article {
+    margin-bottom: 10px;
+  }
+}
