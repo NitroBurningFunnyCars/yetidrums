@@ -22,7 +22,7 @@ $content-width-desktop-minimal-menu: calc(100% - #{$minimal-menu-size});
 }
 
 @mixin mobile {
-    @media only screen and (max-width: #{$tablet-width - 1px}) {
+    @media only screen and (max-width: #{$tablet-width - 1px}), only screen and (max-device-width: #{$tablet-width - 1px}) {
         @content;
     }
 }

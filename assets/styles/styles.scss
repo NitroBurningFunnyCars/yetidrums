@@ -157,7 +157,7 @@ figcaption {
 }
 
 /*   Mobile-specific tweaks */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   /* Keep the theme from shrinking the page to its original 15px mobile size. */
   body {
     font-size: 17px;
@@ -250,7 +250,7 @@ main .content-container {
   padding-right: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   main .content-container {
     width: 100%;
     margin-top: 0;
@@ -368,7 +368,7 @@ main .content-container {
   margin-top: 1.25em;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   main .content-container {
     margin-top: 0;
   }
@@ -432,7 +432,7 @@ main .content-container {
   color: #ff9a75;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .post-feed article .read-more,
   .post-feed article .read-more a {
     color: #f4f4f4;
@@ -531,7 +531,7 @@ article .article-date {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .content-container .pager {
     margin-top: 24px;
   }
