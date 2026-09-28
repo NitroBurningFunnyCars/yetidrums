@@ -1,36 +1,33 @@
 main {
-    background-color: $white;
-    color: black;
-    float: right;
-    width: $content-width-desktop;
-    min-height: 300px;
-    margin: auto;
+    background-color: #121212;
+    color: #e8e8e8;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 92px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    overflow-y: auto;
-    position: fixed;
-    left: $menu-size;
-    top: 0;
+    position: relative;
+    box-sizing: border-box;
+
     @include mobile {
-        top: $mobile-menu-height;
-        left: 0;
+        padding-top: $mobile-menu-height;
         width: 100%;
-        height: calc(100% - #{$mobile-menu-height});
     }
+
     &.no-menu {
-        width: 100%;
-        left: 0;
-        top: 0;
+        padding-top: 0;
     }
 }
+
 footer {
     width: 100%;
     text-align: center;
-    color:$p_text;
+    color: #999999;
     display: flex;
     justify-content: center;
     font-size: 0.7em;
+
     p {
         margin: 0;
     }
@@ -38,13 +35,11 @@ footer {
 
 .is-minimal-menu {
     main {
-        width: $content-width-desktop-minimal-menu;
-        left: $minimal-menu-size;
+        width: 100%;
+        padding-top: 92px;
+
         @include mobile {
-            top: $minimal-menu-size;
-            left: 0;
-            width: 100%;
-            height: calc(100% - #{$minimal-menu-size});
+            padding-top: $mobile-menu-height;
         }
     }
 }

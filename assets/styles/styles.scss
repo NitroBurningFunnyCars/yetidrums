@@ -240,3 +240,303 @@ figcaption {
 html {
   scroll-behavior: smooth;
 }
+
+
+/* Center the site content beneath the horizontal header. */
+main .content-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 2.5em auto 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  main .content-container {
+    width: 100%;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* ------------------------------
+   Dark theme
+--------------------------------*/
+:root {
+  color-scheme: dark;
+}
+
+body,
+main {
+  background: #121212;
+  color: #e8e8e8;
+}
+
+/* Primary text and headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post,
+.post-feed,
+.post-content,
+.post-metadata {
+  color: #e8e8e8;
+}
+
+h2,
+h2 a,
+h3,
+h3 a {
+  color: #ededed;
+}
+
+a,
+a:hover,
+a:focus {
+  color: #dedede;
+}
+
+/* Post cards */
+article {
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.38);
+}
+
+article:before {
+  background: linear-gradient(145deg, rgba(255,255,255,0.025), rgba(255,255,255,0.008));
+}
+
+article:hover {
+  box-shadow: 0 6px 22px rgba(0,0,0,0.48);
+}
+
+article:hover::after {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.045);
+}
+
+/* The feed's inner content panel. */
+.post-feed article > section {
+  background: #242424;
+  color: #e2e2e2;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.32);
+}
+
+.post-content,
+.post .post-content,
+.post .post-metadata {
+  background: #1c1c1c;
+  color: #e8e8e8;
+}
+
+.article-date,
+figcaption,
+.post-metadata,
+.post-metadata p {
+  color: #999;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #3a3a3a;
+}
+
+.click-to-enlarge {
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 3px 12px rgba(0,0,0,0.45);
+}
+
+/* Keep the existing warm accent, but soften it slightly against charcoal. */
+.read-more,
+.read-more a {
+  color: #f47a50;
+}
+
+.read-more a:hover {
+  color: #ff9a75;
+}
+
+@keyframes highlight {
+  0%   { background: rgba(255,255,255,0.10); }
+  100% { background: #1c1c1c; }
+}
+
+/* Slightly tighter transition from the header to the first post. */
+main .content-container {
+  margin-top: 1.25em;
+}
+
+@media only screen and (max-width: 767px) {
+  main .content-container {
+    margin-top: 0;
+  }
+
+  .read-more {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+
+  .read-more a {
+    color: #f4f4f4;
+  }
+
+  .read-more:hover,
+  .read-more a:hover {
+    background-color: #444;
+  }
+}
+
+/* ------------------------------
+   Dark feed cleanup
+   Keep all feed copy readable and flatten the redundant inner panel.
+--------------------------------*/
+.post-feed article,
+.post-feed article p,
+.post-feed article li,
+.post-feed article section,
+.post-feed article section p,
+.post-feed article section li,
+.post-feed article section a:not(.read-more a) {
+  color: #e8e8e8;
+}
+
+.post-feed .article-date,
+.post-feed article .article-date {
+  color: #999999;
+}
+
+/* The outer article is the card; the section is only layout/content. */
+.post-feed article > section {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Don't give the image wrapper an extra card-like frame. */
+.post-feed article > section figure,
+.post-feed article > section .click-to-enlarge {
+  background: transparent;
+}
+
+/* Keep the call-to-action clearly visible on charcoal. */
+.post-feed article .read-more,
+.post-feed article .read-more a {
+  color: #f47a50;
+}
+
+.post-feed article .read-more a:hover,
+.post-feed article .read-more a:focus {
+  color: #ff9a75;
+}
+
+@media only screen and (max-width: 767px) {
+  .post-feed article .read-more,
+  .post-feed article .read-more a {
+    color: #f4f4f4;
+  }
+}
+
+/* ------------------------------
+   Explicit dark-theme metadata colors
+   These classes already exist in the discography-entry markup, so use
+   them directly rather than broad section/div selectors.
+--------------------------------*/
+.post-feed > article > header .article-date,
+.post-feed .article-date,
+article .article-date {
+  color: #aaaaaa !important;
+}
+
+.post-feed .discography-album_summary {
+  color: #d8d8d8 !important;
+}
+
+.post-feed .discography-album_release-date,
+.post-feed .discography-album_type,
+.post-feed .discography-album_play,
+.post-feed .discography-album_download,
+.post-feed .discography-album_buy,
+.post-feed .discography-album_other {
+  color: #b8b8b8 !important;
+}
+
+.post-feed .discography-album_play a,
+.post-feed .discography-album_download a,
+.post-feed .discography-album_buy a,
+.post-feed .discography-album_other a {
+  color: #e8e8e8 !important;
+}
+
+/* Post date — clearer secondary information */
+.post-feed .article-date,
+article .article-date {
+  color: #c4c4c4 !important;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .post-feed .article-date,
+  article .article-date {
+    font-size: 17px !important;
+  }
+}
+
+/* More info — stronger call to action */
+.read-more {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.read-more a {
+  color: #f07a4f !important;
+  text-decoration: none;
+}
+
+.read-more a:hover,
+.read-more a:focus {
+  color: #ff9a73 !important;
+  text-decoration: underline;
+}
+
+
+
+
+
+/* ------------------------------
+   Dark-theme pagination
+   The theme's pager inherits the old black paragraph color, which
+   disappears against the charcoal background.
+--------------------------------*/
+.content-container .pager {
+  position: relative;
+  margin: 32px 0 8px;
+  min-height: 60px;
+  width: 100%;
+  padding: 0;
+}
+
+.content-container .pager li > a {
+  color: #f07a4f !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.content-container .pager li > a:hover,
+.content-container .pager li > a:focus {
+  color: #ff9a73 !important;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .content-container .pager {
+    margin-top: 24px;
+  }
+
+  .content-container .pager li > a {
+    font-size: 18px;
+  }
+}
