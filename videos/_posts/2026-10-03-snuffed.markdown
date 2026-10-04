@@ -1,0 +1,14 @@
+---
+layout: default
+title: Snuffed on SIght House of Blues Drum cam
+image: assets/img/
+responsiveImage:
+  - src: assets/img/snuffed.jpeg
+    size: 640
+description: Snuffed on Sight Drum cam 
+---
+I've been filling in for <a href="https://www.instagram.com/lean_mean_drummin_machine/">Jesse</a>
+with <a href="https://www.instagram.com/snuffedonsight7k/">Snuffed</a> the last three days on their
+run with <a href="https://www.instagram.com/peelingfleshok/">Peelingflesh</a>. Tonight was at the House
+of Blues in Sand Diego.
+YouTube: <a href="https://youtu.be/F8Z-lh55rgg?si=8HI5mR_Uf-ShNNs9">Snuffed on Sight Drumcam</a>
