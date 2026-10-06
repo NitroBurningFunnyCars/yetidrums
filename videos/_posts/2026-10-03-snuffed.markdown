@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Snuffed on SIght House of Blues Drum cam
+title: Snuffed on Sight House of Blues Drum cam
 image: assets/img/
 responsiveImage:
   - src: assets/img/snuffed.jpeg
