@@ -6,6 +6,84 @@ category: about
 ---
 
 <style>
+
+/* --- Featured portrait / bio --- */
+.about-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 42%);
+  grid-template-areas:
+    "intro portrait"
+    "rest  portrait";
+  gap: 0 2rem;
+  align-items: start;
+  margin-bottom: 2.25rem;
+}
+
+.about-profile > .about-intro {
+  grid-area: intro;
+}
+
+.about-profile > .about-rest {
+  grid-area: rest;
+}
+
+.about-featured {
+  grid-area: portrait;
+  margin: 0;
+}
+
+.about-featured a {
+  display: block;
+}
+
+.about-featured img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+}
+
+
+.about-featured figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: right;
+}
+
+.about-featured figcaption a {
+  display: inline !important;
+  color: #aaa;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.about-featured figcaption a:hover,
+.about-featured figcaption a:focus {
+  color: #f07a4f;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px), (max-device-width: 767px) {
+  .about-profile {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "portrait"
+      "rest";
+    gap: 0;
+  }
+
+  .about-featured {
+    margin: 0.75rem 0 1.5rem;
+  }
+
+  .about-featured img {
+    width: 100%;
+    max-height: none;
+  }
+}
 /* --- Gallery: responsive CSS Grid --- */
 .gallery {
   display: grid;
@@ -152,10 +230,27 @@ category: about
 }
 </style>
 
+<div class="about-profile">
+  <div class="about-intro">
 <p>
 Max Mahmood is a drummer whose playing spans jazz, hardcore, death metal, and other heavy music. He began formal lessons at age 5 and was performing with bands by 8. His playing combines technical precision with a broad musical vocabulary developed through years of studying and performing jazz alongside extensive recording and touring experience with heavy bands.
 </p>
+  </div>
 
+  <figure class="about-featured">
+    <a href="assets/img/violent_imagery_max_07262026.jpg">
+      <img src="assets/img/violent_imagery_max_07262026.jpg"
+           alt="Max Mahmood"
+           loading="eager">
+    </a>
+    <figcaption>
+      <a href="https://www.instagram.com/jooon696/"
+         target="_blank"
+         rel="noopener">Photo: @jooon696</a>
+    </figcaption>
+  </figure>
+
+  <div class="about-rest">
 <p>
 Beginning in Fall 2026, Max is studying <a href="https://schoolofmusic.ucla.edu/academics/global-jazz-studies/ba/">Global Jazz Studies</a> at the UCLA Herb Alpert School of Music, an interdisciplinary program combining jazz performance and musicianship with the study of jazz history, culture, improvisation, composition, and music from around the world.
 </p>
@@ -165,8 +260,10 @@ Before UCLA, Max was the first freshman in 20 years to be accepted into the Berk
 </p>
 
 <p>
-Max's <a href="{{ '/discography/discography.html' | relative_url }}">recording work</a> includes Manos de Fierro, Iron Front, Four Winds Away, and other projects. His live experience ranges from jazz ensembles to touring and performing with hardcore and death metal bands. He has also performed as a fill-in drummer with Snuffed on Sight, Forced to Suffer, Peeling Flesh, and other bands.
+Max's <a href="{{ '/discography/discography.html' | relative_url }}">recording work</a> includes Manos de Fierro, Iron Front, Four Winds Away, and other projects. His live experience ranges from jazz ensembles to touring and performing with hardcore and death metal bands. He has also performed as a fill-in drummer with Snuffed on Sight, Forced to Suffer, and other bands.
 </p>
+  </div>
+</div>
 
 <!-- Gallery grid -->
 <div class="gallery" id="gallery">
@@ -178,6 +275,16 @@ Max's <a href="{{ '/discography/discography.html' | relative_url }}">recording w
          data-large="assets/img/max_and_brian_blade.jpg"
          loading="lazy">
     <figcaption>Workshop at CJC with Brian Blade 2025</figcaption>
+  </figure>
+
+  <figure tabindex="0">
+    <img src="assets/img/snuffed_max_10012026_scaled.jpg"
+         alt="Max with Snuffed"
+         width="300"
+         height="375"
+         data-large="assets/img/snuffed_max_10012026.jpg"
+         loading="lazy">
+    <figcaption>Snuffed on Sight at 1720, 2026</figcaption>
   </figure>
 
   <figure tabindex="0">
