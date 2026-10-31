@@ -8,6 +8,6 @@ responsiveImage:
 description: Halloween show at Gilman
 ---
 
-Violent Imagery is playing our second every show supporting Spy. Also playing are
-Fentenyl, Spite House, Rose Imagery. Doors at 6pm, costumes encouraged.
+Violent Imagery is playing our second show, this time supporting Spy. Also playing are
+Fentenyl, and Spite House. Doors at 6pm, costumes encouraged.
 Tickets available <a href="https://app.showslinger.com/v4/spy-fentanyl-no-guard-vio">here</a> or at the door.
